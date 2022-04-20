@@ -1,0 +1,93 @@
+.box{
+    width : 200px;
+    height : 200px;
+    border : 1px solid;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 5px 5px 5px 5px gray;
+  }
+  .box1{
+    width : 200px;
+    height : 200px;
+    border : 1px solid;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 5px 5px 5px gray;
+  }
+  .box2{
+    width : 150px;
+    height: 150px;
+    text-align: center;
+    font-size: 25px;
+    background-color: coral;
+    transition-property: transform;
+    transition-duration: 5s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+  }
+  .box2:hover{
+    transform: rotate(360deg);
+  }
+  
+  .box3{
+    width : 150px;
+    height: 150px;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(24, 206, 94);
+    transition-property: transform;
+    transition-duration: 5s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+  }
+  .box3:hover{
+    transform: translate(500px);
+    /* transform: translateY(500px); */
+  }
+  
+  .box4{
+    width : 150px;
+    height: 150px;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(238, 216, 18);
+    transition-property: width;
+    transition-duration: 5s;
+    transition-timing-function: linear;
+    transition-delay: 2s;
+  }
+  .box4:hover{
+    width :400px;
+  }
+  
+
+
+
+
+/* Z-index-->Stacking the elements like in order
+<div class="box box1">Box1</div>
+<div class="box box2">Box2</div> */
+
+
+.zindex {
+    border: 2px solid red;
+    margin-top: 20%;
+    margin-left: 40%
+}
+
+.zindex1 {
+    width: 250px;
+    height: 200px;
+    background-color: purple;
+    position: absolute;
+    /* top: 60px; */
+    left: 25px;
+    z-index: +1;
+}
+
+.zindex2 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    z-index: -1;
+}
